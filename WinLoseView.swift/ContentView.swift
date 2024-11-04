@@ -1,21 +1,20 @@
-//
-//  ContentView.swift
-//  WinLoseView.swift
-//
-//  Created by user on 11/1/24.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showWinLoseScreen = false
+    @State private var didWin = false
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button("End Game") {
+                // Randomly set win or lose for testing
+                didWin = Bool.random()
+                showWinLoseScreen = true
+            }
         }
-        .padding()
+        .fullScreenCover(isPresented: $showWinLoseScreen) {
+            WinLoseScreen(didWin: didWin)
+        }
     }
 }
 
@@ -24,3 +23,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

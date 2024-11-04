@@ -11,6 +11,7 @@
 		CEA36F8C2CD5D18D00F44F7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA36F8B2CD5D18D00F44F7C /* ContentView.swift */; };
 		CEA36F8E2CD5D19000F44F7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA36F8D2CD5D19000F44F7C /* Assets.xcassets */; };
 		CEA36F912CD5D19000F44F7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA36F902CD5D19000F44F7C /* Preview Assets.xcassets */; };
+		CEA36F982CD5E57500F44F7C /* WinLoseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA36F972CD5E57500F44F7C /* WinLoseScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		CEA36F8B2CD5D18D00F44F7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEA36F8D2CD5D19000F44F7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEA36F902CD5D19000F44F7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEA36F972CD5E57500F44F7C /* WinLoseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinLoseScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				CEA36F8B2CD5D18D00F44F7C /* ContentView.swift */,
 				CEA36F8D2CD5D19000F44F7C /* Assets.xcassets */,
 				CEA36F8F2CD5D19000F44F7C /* Preview Content */,
+				CEA36F972CD5E57500F44F7C /* WinLoseScreen.swift */,
 			);
 			path = WinLoseView.swift;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA36F982CD5E57500F44F7C /* WinLoseScreen.swift in Sources */,
 				CEA36F8C2CD5D18D00F44F7C /* ContentView.swift in Sources */,
 				CEA36F8A2CD5D18D00F44F7C /* WinLoseView_swiftApp.swift in Sources */,
 			);
