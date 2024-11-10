@@ -1,45 +1,27 @@
 import SwiftUI
 
 struct WinLoseScreen: View {
-    // Determines if the player won or lost
+    @EnvironmentObject var navigationHelper: NavigationHelper
     var didWin: Bool
-    
-    // Environment variable to dismiss this view
-    @Environment(\.presentationMode) var presentationMode
-    
+
     var body: some View {
         VStack {
-            Spacer()
-
-            Text(didWin ? "You Win!" : "You Lose!")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .foregroundColor(Color.brown) // Dark brown text color
-
-            Spacer()
-
-            Button(action: {
-                presentationMode.wrappedValue.dismiss() // Dismiss this view to go back
-            }) {
-                Text("Play Again")
-                    .font(.title2)
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+            if didWin {
+                Text("You Win! 🎉")
+                    .font(.largeTitle)
+                    .foregroundColor(.green)
+            } else {
+                Text("You Lose 😞")
+                    .font(.largeTitle)
+                    .foregroundColor(.red)
             }
-        }
-        .padding()
-        .frame(maxWidth: .infinity, maxHeight: .infinity) // Full-screen size
-        .background(Color.green.edgesIgnoringSafeArea(.all)) // Dark green background
-    }
-}
-
-struct WinLoseScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            WinLoseScreen(didWin: true) // Preview for "Win" state
-            WinLoseScreen(didWin: false) // Preview for "Lose" state
+            Button("Play Again") {
+                navigationHelper.toggleWinLose()
+            }
+            .padding()
+            .background(Color.blue)
+            .foregroundColor(.white)
+            .cornerRadius(10)
         }
     }
 }

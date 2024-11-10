@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE9F19C82CE023EE00C7C6BE /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F19C72CE023EE00C7C6BE /* NavigationHelper.swift */; };
 		CEA36F8A2CD5D18D00F44F7C /* WinLoseView_swiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA36F892CD5D18D00F44F7C /* WinLoseView_swiftApp.swift */; };
 		CEA36F8C2CD5D18D00F44F7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA36F8B2CD5D18D00F44F7C /* ContentView.swift */; };
 		CEA36F8E2CD5D19000F44F7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA36F8D2CD5D19000F44F7C /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE9F19C72CE023EE00C7C6BE /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
 		CEA36F862CD5D18D00F44F7C /* WinLoseView.swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WinLoseView.swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA36F892CD5D18D00F44F7C /* WinLoseView_swiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinLoseView_swiftApp.swift; sourceTree = "<group>"; };
 		CEA36F8B2CD5D18D00F44F7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				CEA36F892CD5D18D00F44F7C /* WinLoseView_swiftApp.swift */,
+				CE9F19C72CE023EE00C7C6BE /* NavigationHelper.swift */,
 				CEA36F8B2CD5D18D00F44F7C /* ContentView.swift */,
 				CEA36F8D2CD5D19000F44F7C /* Assets.xcassets */,
 				CEA36F8F2CD5D19000F44F7C /* Preview Content */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEA36F982CD5E57500F44F7C /* WinLoseScreen.swift in Sources */,
+				CE9F19C82CE023EE00C7C6BE /* NavigationHelper.swift in Sources */,
 				CEA36F8C2CD5D18D00F44F7C /* ContentView.swift in Sources */,
 				CEA36F8A2CD5D18D00F44F7C /* WinLoseView_swiftApp.swift in Sources */,
 			);
